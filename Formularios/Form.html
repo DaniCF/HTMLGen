@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Formularios</title>
+    <style>
+        .bg-1{
+            padding-top: 10px;
+            padding-bottom: 20px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border-radius: 15px;
+        }
+        .green{
+            color:rgb(90, 187, 0)
+        }
+        .form-vertical{
+            margin-left: 10px;
+            margin-right: 10px;
+            border: 0px;
+        }
+        .input-group-addon{
+            background: rgb(255, 255, 255);
+            border: 0px;
+            border-radius: 30px;
+        }
+
+        .input-group{
+            background: rgb(255, 255, 255);
+            border: 0px;
+            border-radius: 30px;
+        }
+
+        .form-control{
+            background: rgb(255, 255, 255);
+            border: 0px;
+            border-radius: 30px;
+        }
+
+        .btn{
+            border-radius: 50px;
+        }
+        h4{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <p></p>
+    <div class="container bg-1 text-left">
+        <h2 class="text-center">Create account</h2>
+        <form class="form-vertical" action="/action_page.php">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input type="text" id="nombre" class="form-control" name="nombre" placeholder="Name" required minlength="3" maxlength="30">
+            </div>
+            <p></p>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                <input type="number" class="form-control" id="nombre" name="nombre" placeholder="Phone Number" required maxlength="9">
+            </div>
+            <p></p>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                <input type="email" class="form-control" id="nombre" name="nombre" placeholder="Email" required>
+            </div>
+            <p></p>
+            <div class="input-group">
+                
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input type="password" class="form-control" id="nombre" name="nombre" placeholder="Password" required minlength="3" maxlength="30">
+                
+            </div>
+            <p></p>
+            <div>  
+                <input type="checkbox" name="sex">
+                <label for=""> I agree the <a class="green" href="terms">Terms and Conditions</a> and <a class="green" href="terms">Privacy Policy</a></label>
+            </div>
+
+            <div class="text-right">
+                <button type="submit" class="btn btn-success"><h4>Create Account</h4></button>
+            </div>
+        </form>
+
+    </div>
+    <p></p>
+    <form action="">
+        <div>
+            <input type="text" id="nombre" name="nombre" placeholder="Say your name" required minlength="3" maxlength="30">
+        </div>
+        <p></p>
+        <div>
+            <input type="email" id="email" name="email" placeholder="Say your email" required>
+        </div>
+        <p></p>
+        <div>
+            <input type="number" id="age" name="age" placeholder="Say your age" min="18" max="99">
+        </div>
+        <p></p>
+        <div>
+            <input type="radio" name="sex"><label for="">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="sex"><label for="">Female</label>
+        </div>
+        <div>
+            <input type="radio" name="sex"><label for="">Attack Helicopter</label>
+        </div>
+        <p></p>
+        <div>
+            <select name="country" id="country">
+                <option value="1">Country roads</option>
+                <option value="2">Take me home</option>
+                <option value="3">To the place</option>
+                <option value="4">I beloooong</option>
+                <option value="5">WEST VIRGINIA</option>
+                <option value="6">Mountain mamma</option>
+            </select>
+        <p></p>
+        <p></p>
+        <div>
+            <input type="checkbox" name="sex"><label for="">Not just the men</label>
+        </div>
+        <div>
+            <input type="checkbox" name="sex"><label for="">But the women</label>
+        </div>
+        <div>
+            <input type="checkbox" name="sex"><label for="">and the children too</label>
+        </div>
+        <p></p>
+        <button>I HATE THEM!</button>
+    </form>
+</body>
+</html>
